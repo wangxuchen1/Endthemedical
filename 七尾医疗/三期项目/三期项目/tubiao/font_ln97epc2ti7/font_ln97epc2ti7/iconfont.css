@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1653555749206') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-47:before {
+  content: "\e63a";
+}
+
+.icon-48:before {
+  content: "\e63b";
+}
+
+.icon-tupian:before {
+  content: "\e63e";
+}
+
+.icon-fuhao-ziti:before {
+  content: "\e71f";
+}
+
+.icon-biaoqing_xiao:before {
+  content: "\eb22";
+}
+
+.icon-charulianjie:before {
+  content: "\ec7f";
+}
+
+.icon-juzhongduiqi:before {
+  content: "\ec80";
+}
+
+.icon-youduiqi:before {
+  content: "\ec82";
+}
+
+.icon-zitishanchuxian:before {
+  content: "\ec83";
+}
+
+.icon-zitixieti:before {
+  content: "\ec85";
+}
+
+.icon-zuoduiqi:before {
+  content: "\ec86";
+}
+
+.icon-zuoyouduiqi:before {
+  content: "\ec87";
+}
+
+.icon-bold:before {
+  content: "\eaef";
+}
+
+.icon-font-colors:before {
+  content: "\eaf0";
+}
+
+.icon-zitixiahuaxian:before {
+  content: "\e64d";
+}
+
+.icon-zitibiaoti:before {
+  content: "\e64e";
+}
+

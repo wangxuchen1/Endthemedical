@@ -1,0 +1,147 @@
+/* 日历  搜索框 */
+.content-module_1{
+    width: 100%;
+    height: 9%;
+    /* background-color: burlywood; */
+    /* position: relative; */
+
+}
+#test1{
+    width: 300px;height: 37.5px;
+    border-radius: 2%;
+    border: 1px solid rgba(0, 110, 255,0.5);
+    /* position: absolute; */
+    margin-left:20px;
+    margin-top: -2.5px;
+    outline-color:rgb(0, 110, 255); 
+    color: rgb(153, 153, 153);
+}
+/* #test1{
+width: 250px;
+height: 50px;
+text-align: center;
+border-radius: 5px;
+background-color: aqua;
+} */
+
+.content-module_1_2{
+    /* border-radius: 2%; */
+    border: 1px solid rgba(0, 110, 255,0.5);
+    /* position: absolute; */
+    margin-left:20px;
+    margin-top: 20px;
+    width: 300px;height: 35px;
+    outline-color:rgb(0, 110, 255);
+    color: rgb(153, 153, 153);
+}
+.content-module_1_3{
+    width: 80px;height: 35px;
+    border-radius: 10%;
+    background-color: rgb(0, 110, 255);
+    outline-color:rgb(0, 110, 255);
+    border: none;
+    color: aliceblue;
+}
+
+
+/* 表单 */
+.content-module_2{
+    width: 100%;
+    height: 81%;
+    margin-top: 20px;
+    /* background-color: aquamarine; */
+
+}
+.header{
+
+        width: 100%;
+        height: auto;
+        margin-left: 10px; 
+        color: #d2d2d2;
+        border-collapse: collapse; 
+        /* position: absolute; */
+        top:100px;
+        /* display: block; */
+        float: right;
+    }
+/* 表单下划线 */
+.t{
+    height: 30px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+#diamonds{margin-left: 30px;
+    width: 15px;
+    height: 15px;
+    border:1px solid rgb(215, 215, 215);
+    }
+.bd_1{margin-left: 30px;
+    width: 15px;
+    height: 15px;
+    border:1px solid rgb(215, 215, 215);
+    }
+.bd{
+    height: 55px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+    color: black;
+    font-size: 13px;
+}
+.iconfont{
+    color: blue;
+    font-size: 20px;
+}
+
+
+
+
+/* 页尾 */
+#bot{
+     width: 700px;
+     height: 50px;
+     margin: 0 530px;
+     display: flex;
+     flex-flow: row nowrap;
+     line-height: 50px;
+    }
+    .div_1{
+     width: 60px;
+     height: 30px;
+     text-align: center;
+     line-height: 30px;
+     margin-top: 10px;
+     border: 1px solid rgb(168, 168, 168);
+    }
+    .no{
+     border-right: none;
+    }
+    .div_2{
+     width: 35px;
+     height: 30px;
+     text-align: center;
+     line-height: 30px;
+     margin-top: 10px;
+     border: 1px solid rgb(168, 168, 168);
+     border-right: none;
+    }
+    .div_3{
+    width: 80px;
+    height: 30px;
+    margin: 10px 10px;
+    }
+    .span_1>input{
+     width: 30px;
+     height: 25px;
+     text-align: center;
+     margin-left: 3px;
+     margin-right: 3px;
+    }
+    .btn_1{
+     width: 50px;
+     height: 30px;
+     background-color: #fff;
+     color: rgb(25,124,254);
+     border: 1px solid rgb(25, 124, 254);
+     margin: 10px 10px; 
+     opacity: 0.5;
+    }
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./advertisement.css">
+    <link rel="stylesheet" href="../layui-v2.6.8/layui/css/layui.css">
+
+    <script src="./advertisement.js"></script>
+    <link rel="stylesheet" href="./font_ln97epc2ti7/iconfont.css">
+    <link rel="stylesheet" href="../AdminManagement管理员/Home_page.css">
+    <link rel="stylesheet" href="../img/download/font_lk8imr1od1f/iconfont.css">
+    <title>七尾</title>
+</head>
+
+<body>
+    <div id="frame">
+        <!-- 顶部导航栏 -->
+        <div id="navigation">
+            <div class="navigation_1">
+                <div class="navigation-div"><img src="../img/HeadPortrait-u4823.svg" alt=""
+                        style="width: 23px;height: 23px;"></div>
+                <span class="navigation-span">Sam</span>
+                <span class="iconfont">&#xe656;</span>
+                <div id="navigation_1-set" >
+                    <div class="navigation_1-set"><span><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></span></div>
+                    <div class="navigation_1-set"><span><a href="/Register .html">退出</a></span></div>
+                </div>
+            </div>
+        </div>
+        <!-- 左侧导航栏 -->
+        <div id="sidebar">
+            <div class="sidebar-div1">
+                <div class="sidebar-div1-logo">logo</div>
+                <span>七尾医疗服务后台</span>
+            </div>
+            <ul class="layui-nav layui-nav-tree" lay-filter="test"
+                style="width: 240px;height: 200px;margin-top: 30px;background-color: rgb(25, 124, 254);">
+                <li class="layui-nav-item"><a href="/Home_page.html" style="margin-left:-3px; "><span class="iconfont" style="margin-left:5px;">&#xe79d;</span>首页</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;" id="order" ><span class="iconfont">&#xe61e;</span>预约管理</a>
+                    <dl class="layui-nav-child" id="layuinavchild" >
+                        <dd><a href="/xiangmu/七尾医疗/html/appointment.html">预约挂号</a></dd>
+                        <dd><a href="/xiangmu/七尾医疗/html/Accounting.html">预约核酸检测</a></dd>
+                        <dd><a href="/xiangmu/七尾医疗/html/physical.html">预约体检</a></dd>
+                        <dd><a href="/七尾/Home-page.html">医生排班</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><span class="iconfont">&#xe66e;</span>费用管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page.html">门诊消费记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_2.html">门诊充值记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_3.html">住院消费记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_4.html">住院充值记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_5.html">退款记录</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><span class="iconfont">&#xe615;</span>医院信息</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/三期项目/三期项目/The doctor management/doctor.html">医生管理</a></dd>
+                        <dd><a href="/三期项目/三期项目/administrative offices management/department.html">科室管理</a></dd>
+                        <dd><a href="/三期项目/三期项目/A medical plan/physical examination.html">体检套餐</a></dd>
+                        <dd><a href="/html/Hospital_navigation_four.html">健康百科</a></dd>
+                        <dd><a href="/html/Hospital_navigation_five.html">医院导航</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><span class="iconfont">&#xe611;</span>系统设置</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/systemSetup/AdminManagement管理员/admin.html">管理员管理</a></dd>
+                        <dd><a href="/systemSetup/RoleManagement角色/roleManage.html">角色管理</a></dd>
+                        <dd><a href="/systemSetup/TitleManagement职称/titleManage.html">职称管理</a></dd>
+                        <dd><a href="/systemSetup/AdvertisementMessage消息/advertisement.html">消息公告</a></dd>
+                        <dd><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!-- 中间内容 -->
+        <div id="content">
+            <div class="content-wordage">
+                <div class="content-wordage-div"></div>
+                <span class="content-wordage-span">消息公告</span>
+            </div>
+            <div class="content-module" style="height: auto;">
+                <div class="content-top">
+                    <span>编辑管理员信息</span> 
+                </div>
+                <div class="con">
+                    <span>标题</span>
+                    <span class="xx">*</span>
+                    <input type="text" placeholder="请输入内容" style="margin-left: 65px;">
+                </div>
+                <div class="con">
+                    <span>上传人</span>
+                    <input type="text" placeholder="请输入内容" style="margin-left: 60px;">
+                </div>
+                <div class="con">
+                    <span>内容</span>
+                    <span class="xx">*</span>
+                    <div class="user">
+                        <div class="user-top">
+                            <span class="iconfont">&#xe63a;</span>
+                            <span class="iconfont">&#xe63b;</span>
+                            <span>|</span>
+                            <span class="iconfont">&#xe64e;</span>
+                            <span class="iconfont">&#xeaef;</span>
+                            <span class="iconfont">&#xe71f;</span>
+                            <span class="iconfont">&#xec83;</span>
+                            <span class="iconfont">&#xec85;</span>
+                            <span class="iconfont">&#xe64d;</span>
+                            <span class="iconfont">&#xeaf0;</span>
+                            <span>|</span>
+                            <span class="iconfont">&#xec82;</span>
+                            <span class="iconfont">&#xec86;</span>
+                            <span class="iconfont">&#xec87;</span>
+                            <span class="iconfont">&#xec80;</span>
+                            <span>|</span>
+                            <span class="iconfont">&#xec7f;</span>
+                            <span class="iconfont">&#xe63e;</span>
+                            <span class="iconfont">&#xeb22;</span>
+                        </div>
+                        <div >
+                            <input type="text" placeholder="请输入内容" style="border: none;">
+                            </div>
+                        <div class="user-bottom"></div>
+                    </div>
+                   
+                </div>
+                <div class="con con_1">
+                    <span>是否启用</span>
+                    <form class="layui-form">
+                        <div class="layui-form-item">
+                            <input type="checkbox" name="switch" lay-skin="switch">
+                        </div>
+                    </form>
+                </div>
+                       <div class="layui-inline con"> 
+                        <span>上传时间</span>
+                        <!-- <input type="text" class="layui-input" id="test1" placeholder="请选择日期"> -->
+                        <input type="date" name="start_time" value="" id="text1"/>
+                    </div>  
+                   
+        <div class="con">
+            <a href="./advertisement.html" class="layui-btn layui-btn-normal">保存</a>
+            <button type="button" class="layui-btn layui-btn-primary layui-border-blue"><a href="./advertisement.html">取消</a></button>   
+        </div>
+                               
+
+        <script src="../layui-v2.6.8/layui/layui.js"></script>
+
+</body>
+
+</html>

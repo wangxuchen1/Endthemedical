@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/operate2.css">
+    <script src="../js/operate2.js"></script>
+    <!-- <script src="../js/operate2.js"></script> -->
+    <title>预约体检</title>
+    <link rel="stylesheet" href="../css/appointment1.css">
+    <link rel="stylesheet" href="../download/font_lk8imr1od1f/iconfont.css">
+    <link rel="stylesheet" href="../download/font_lk8imr1od1f/demo.css">
+    <link rel="stylesheet" href="../layui-v2.6.8/layui/css/layui.css">
+</head>
+
+<body>
+     <!-- 整体大盒子 -->
+     <div id="frame">
+        <!-- 顶部导航栏 -->
+        <div id="navigation">
+            <div class="navigation_1">
+                <div class="navigation-div"><img src="../img/HeadPortrait-u4823.svg" alt=""
+                        style="width: 23px;height: 23px;"></div>
+                <span class="navigation-span">Sam</span>
+                <span class="iconfont">&#xe656;</span>
+                <div id="navigation_1-set" >
+                    <div class="navigation_1-set"><span><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></span></div>
+                    <div class="navigation_1-set"><span><a href="/Register.html">退出</a></span></div>
+                </div>
+            </div>
+        </div>
+        <!-- 左侧导航栏 -->
+        <div id="sidebar">
+            <div class="sidebar-div1">
+                <div class="sidebar-div1-logo">logo</div>
+                <span>七尾医疗服务后台</span>
+            </div>
+            <ul class="layui-nav layui-nav-tree" lay-filter="test"
+                style="width: 240px;height: 200px;margin-top: 30px;background-color: rgb(25, 124, 254);">
+                <li class="layui-nav-item"><a href="/Home_page.html" style="margin-left:-3px; "><span class="iconfont" style="margin-left:5px;">&#xe79d;</span>首页</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;" id="order" ><span class="iconfont">&#xe61e;</span>预约管理</a>
+                    <dl class="layui-nav-child" id="layuinavchild" >
+                        <dd><a href="/xiangmu/七尾医疗/html/appointment.html">预约挂号</a></dd>
+                        <dd><a href="/xiangmu/七尾医疗/html/Accounting.html">预约核酸检测</a></dd>
+                        <dd><a href="/xiangmu/七尾医疗/html/physical.html">预约体检</a></dd>
+                        <dd><a href="/七尾/Home-page.html">医生排班</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><span class="iconfont">&#xe66e;</span>费用管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page.html">门诊消费记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_2.html">门诊充值记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_3.html">住院消费记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_4.html">住院充值记录</a></dd>
+                        <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_5.html">退款记录</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><span class="iconfont">&#xe615;</span>医院信息</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/三期项目/三期项目/The doctor management/doctor.html">医生管理</a></dd>
+                        <dd><a href="/三期项目/三期项目/administrative offices management/department .html">科室管理</a></dd>
+                        <dd><a href="/三期项目/三期项目/A medical plan/physical examination.html">体检套餐</a></dd>
+                        <dd><a href="/html/Hospital_navigation_four.html">健康百科</a></dd>
+                        <dd><a href="/html/Hospital_navigation_five.html">医院导航</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><span class="iconfont">&#xe611;</span>系统设置</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/systemSetup/AdminManagement管理员/admin.html">管理员管理</a></dd>
+                        <dd><a href="/systemSetup/RoleManagement角色/roleManage.html">角色管理</a></dd>
+                        <dd><a href="/systemSetup/TitleManagement职称/titleManage.html">职称管理</a></dd>
+                        <dd><a href="/systemSetup/AdvertisementMessage消息/advertisement.html">消息公告</a></dd>
+                        <dd><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+        <div id="content">
+            <div class="content-wordage">
+                <div class="content-wordage-div"></div>
+                <span class="content-wordage-span">挂号详情</span>
+                <div class="Patient">
+                    <span>患者信息</span>
+                    <!-- 患者姓名 -->
+                    <div class="box">
+                        <div class="box1">
+                            <span class="gray">患者姓名</span>
+                            <span class="black">赖尚荣</span>
+                             <span class="gray1">就诊卡号</span>
+                             <span class="black1">50090302010</span>
+                            <div>
+                            <span class="gray">证件类型</span>
+                            <span class="black">身份证号</span>
+                            <span class="gray1">证件号码</span>
+                             <span class="black1">3718901995020</span>
+                              <span class="gray2">患者头像</span>
+                                
+                            </div>
+                        <div>
+                            <span class="gray">微信号</span>
+                            <span class="black">七尾Sam</span>
+                            <span class="gray1">手机号码</span>
+                             <span class="black1">15678900988</span>
+                             <span class="gray1">关系</span>
+                             <span class="black1">本人</span>
+                        </div>
+                        <div>
+                            <span class="gray">就诊人地址</span>
+                            <span class="black">北京市朝阳区**路**号**小区</span>
+                            <div class="box3"></div>
+                        </div>
+                        </div>
+                        <!-- 第二个表格 -->
+                        <div class="box4">
+                            <span>预约信息</span>
+                            <div class="box5">
+                                <span class="font-gray">就诊医院</span>
+                            <span class="font-black">北京市第一人民医院/东院</span>
+                             <span class="font-gray1">医院地址</span>
+                             <span class="font-black1">北京市大兴区**路990号</span>
+                             <span class="font-gray2">就诊科室</span>
+                             <span class="font-black2">门诊三楼分诊台</span>
+                             <div>
+                                <span class="font-gray">预约体验时间</span>
+                                <span class="font-black">2020-12-30 周一上午</span>
+                                <span class="font-gray">候诊时间</span>
+                                <span class="font-black11">现场拍号</span>
+                                <span class="font-gray2">体验套餐</span>
+                             <span class="font-black2">男性体验基础</span>
+                                </div>
+                                <div>
+                               <span class="font-gray">体验费</span>
+                              <span class="font-black">￥1200.00</span>
+                              <span class="font-gray1">预约时间</span>
+                              <span class="font-black1">2020-12-12 10:09:09</span>
+                              <span class="font-gray2">状态</span>
+                             <span class="font-black2">已完成</span>
+                            </div>
+                            <div>
+                                            <span class="font-gray">预约备注</span>
+                                            <input type="text" placeholder="请输入内容" class="input">
+                                            <button class="look">查看报告</button>
+                                            </div>
+                                            <button class="save"><a href="./physical.html">保存</a></button>
+                                            <button class="cancel"><a href="./physical.html">取消</a></button>
+                                            
+                            </div>
+                          </div>
+
+                </div>
+                 </div>
+            </div>
+          
+        </div>
+    </div>
+</body>
+
+</html>

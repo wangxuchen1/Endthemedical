@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/zych_2.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../css/Home-page.css">
+    <link rel="stylesheet" href="../css/Home_page.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../layui/layui.js">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../download/font_lk8imr1od1f/iconfont.css">
+    <title>住院充值2</title>
+</head>
+
+<body>
+    <!-- 整体大盒子 -->
+   <div id="frame">
+    <!-- 顶部导航栏 -->
+    <div id="navigation">
+        <div class="navigation_1">
+            <div class="navigation-div"><img src="../img/HeadPortrait-u4823.svg" alt=""
+                    style="width: 23px;height: 23px;"></div>
+            <span class="navigation-span">Sam</span>
+            <span class="iconfont">&#xe656;</span>
+            <div id="navigation_1-set" >
+                <div class="navigation_1-set"><span><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></span></div>
+                <div class="navigation_1-set"><span><a href="/Register .html">退出</a></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- 左侧导航栏 -->
+    <div id="sidebar">
+        <div class="sidebar-div1">
+            <div class="sidebar-div1-logo">logo</div>
+            <span>七尾医疗服务后台</span>
+        </div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test"
+            style="width: 240px;height: 200px;margin-top: 30px;background-color: rgb(25, 124, 254);">
+            <li class="layui-nav-item"><a href="/Home_page.html" style="margin-left:-3px; "><span class="iconfont" style="margin-left:5px;">&#xe79d;</span>首页</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;" id="order" ><span class="iconfont">&#xe61e;</span>预约管理</a>
+                <dl class="layui-nav-child" id="layuinavchild" >
+                    <dd><a href="/xiangmu/七尾医疗/html/appointment.html">预约挂号</a></dd>
+                    <dd><a href="/xiangmu/七尾医疗/html/Accounting.html">预约核酸检测</a></dd>
+                    <dd><a href="/xiangmu/七尾医疗/html/physical.html">预约体检</a></dd>
+                    <dd><a href="/七尾/Home-page.html">医生排班</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><span class="iconfont">&#xe66e;</span>费用管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page.html">门诊消费记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_2.html">门诊充值记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_3.html">住院消费记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_4.html">住院充值记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_5.html">退款记录</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><span class="iconfont">&#xe615;</span>医院信息</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="/三期项目/三期项目/The doctor management/doctor.html">医生管理</a></dd>
+                    <dd><a href="/三期项目/三期项目/administrative offices management/department.html">科室管理</a></dd>
+                    <dd><a href="/三期项目/三期项目/A medical plan/physical examination.html">体检套餐</a></dd>
+                    <dd><a href="/html/Hospital_navigation_four.html">健康百科</a></dd>
+                    <dd><a href="/html/Hospital_navigation_five.html">医院导航</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><span class="iconfont">&#xe611;</span>系统设置</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="/systemSetup/AdminManagement管理员/admin.html">管理员管理</a></dd>
+                    <dd><a href="/systemSetup/RoleManagement角色/roleManage.html">角色管理</a></dd>
+                    <dd><a href="/systemSetup/TitleManagement职称/titleManage.html">职称管理</a></dd>
+                    <dd><a href="/systemSetup/AdvertisementMessage消息/advertisement.html">消息公告</a></dd>
+                    <dd><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+
+
+
+        <div id="content">
+<!-- 门诊消费，导入导出 -->
+            <div class="content-wordage">
+                <div class="content-wordage-div"></div>
+                <span class="content-wordage-span">订单详情</span>
+                <div class="content-wordage-div1"><span>导入</span></div>
+                <div class="content-wordage-div2"><span>导出</span></div>
+            </div>
+
+<!-- 中间部分 -->
+            <div class="content-module">
+                <div class="content-module_1">
+                    <div class="content-module_1_div">
+                        <span>患者信息</span>
+                    </div>
+                    <div class="content-module_1_fu">
+                   <div class="content-module_1_1">
+                       <div class="content-module_1_1_1">
+                        <span class="content-module_ash">患者姓名</span>
+                       <span class="content-module_black">二哥</span>
+                       </div>
+                       
+                       <div class="content-module_1_1_1">
+                        <span class="content-module_ash">证件类型</span>
+                       <span class="content-module_black">身份证号</span>
+                       </div>
+                       <div class="content-module_1_1_1">
+                        <span class="content-module_ash">微信昵称</span>
+                       <span class="content-module_black">7</span>
+                       </div>
+                       <div class="content-module_1_1_1">
+                        <span class="content-module_ash">就诊人地址</span>
+                       <span class="content-module_black">太原杏花岭区典膳所二号院</span>
+                       </div>
+
+                   </div>
+                   <div class="content-module_1_2">
+                    <div class="content-module_1_1_1">
+                        <span class="content-module_ash">就诊卡号</span>
+                       <span class="content-module_black">5009090000</span>
+                       </div>
+                       
+                       <div class="content-module_1_1_1">
+                        <span class="content-module_ash">证件号码</span>
+                       <span class="content-module_black">75489654724578</span>
+                       </div>
+                       <div class="content-module_1_1_1">
+                        <span class="content-module_ash">手机号码</span>
+                       <span class="content-module_black">15687548322</span>
+                       </div>
+                   </div>
+                   <div class="content-module_1_3">
+                    <div class="content-module_1_1_1">
+                        <span class="content-module_ash">患者头像</span>
+                       <div class="content-module_img" ><img src="../img/useravatar.jpg" alt="" style="width: 70px;height: 70px;border-radius: 50px;"></div>
+                       </div>
+                       <div class="content-module_1_1_1">
+                        <span class="content-module_ash">关系</span>
+                       <span class="content-module_black">本人</span>
+                       </div>
+                   </div>
+                   
+                </div>
+                </div>
+
+
+
+
+
+                <div class="content-module_2">
+                    <div class="content-module_2_div">
+                        <span>住院信息</span>
+                    </div>
+                    <div class="content-module_1_fu">
+                        <div class="content-module_1_1">
+                            <div class="content-module_1_1_1">
+                             <span class="content-module_ash">住 院 号</span>
+                            <span class="content-module_black">478900</span>
+                            </div>
+                            
+                            <div class="content-module_1_1_1">
+                             <span class="content-module_ash">出院时间</span>
+                            <span class="content-module_black"></span>
+                            </div>
+                            
+     
+                        </div>
+                        <div class="content-module_1_2">
+                         <div class="content-module_1_1_1">
+                             <span class="content-module_ash">住院状态</span>
+                            <span class="content-module_black">住院中</span>
+                            </div>
+                            
+                            <div class="content-module_1_1_1">
+                             <span class="content-module_ash">院区</span>
+                            <span class="content-module_black">南十方精神病院</span>
+                            </div>
+                            
+                        </div>
+                        <div class="content-module_1_3">
+                         <div class="content-module_1_1_1">
+                             <span class="content-module_ash">入院时间</span>
+                            <div class="content-module_black" >2020.05.26 09:55:00</div>
+                            </div>
+                            <div class="content-module_1_1_1">
+                             <span class="content-module_ash">住院科室</span>
+                            <span class="content-module_black">综合住院部</span>
+                            </div>
+                        </div>
+                        
+                     </div>
+                     
+                   
+                    
+
+                    <!-- 第二个div的表单 -->
+                    <!-- <div class="content-module_2_2">
+                        <table class="u">
+                        <div >
+                            <tr>
+                                <td>序号</td>
+                                <td>项目类别</td>
+                                <td>项目名称</td>
+                                <td>单价（元）</td>
+                                <td>数量</td>
+                                <td>小计（元）</td>
+                            </tr>
+                            
+                        </div>
+                        
+                        </table>
+                    </div> -->
+                </div>
+
+
+
+                    <div class="content-module_3">
+                        <div class="content-module_3_div">
+                            <span>订单信息</span>
+                        </div>
+                        <div class="content-module_1_fu">
+                            <div class="content-module_1_1">
+                                <div class="content-module_1_1_1">
+                                 <span class="content-module_ash">订单总额</span>
+                                <span class="content-module_black">600.00（元）</span>
+                                </div>
+                                
+                                <div class="content-module_1_1_1">
+                                 <span class="content-module_ash">订单状态</span>
+                                <span class="content-module_black">已支付</span>
+                                </div>
+                                <div class="content-module_1_1_1">
+                                 <span class="content-module_ash">结算医生</span>
+                                <span class="content-module_black">林元</span>
+                                </div>
+         
+                            </div>
+                            <div class="content-module_1_2">
+                             <div class="content-module_1_1_1">
+                                 <span class="content-module_ash">支付方式</span>
+                                <span class="content-module_black">住院预交金扣费</span>
+                                </div>
+                                
+                                <div class="content-module_1_1_1">
+                                 <span class="content-module_ash">订单编号</span>
+                                <span class="content-module_black">ZY2020081900098</span>
+                                </div>
+                                <div class="content-module_1_1_1">
+                                 <span class="content-module_ash"></span>
+                                <span class="content-module_black"></span>
+                                </div>
+                            </div>
+                            <div class="content-module_1_3">
+                             <div class="content-module_1_1_1">
+                                 <span class="content-module_ash">押金余额</span>
+                                <div class="content-module_black" >2000.00（元）</div>
+                                </div>
+                                <div class="content-module_1_1_1">
+                                 <span class="content-module_ash">结算时间</span>
+                                <span class="content-module_black">2022-05-26 10:09:09</span>
+                                </div>
+                            </div>
+                            
+                         </div>
+                         <div class="content-module_3_bz">
+                             <span class="content-module_3_bz_sp">订单备注</span>
+                             <input class="content-module_3_bz_input" type="text" value="    请输入内容" onfocus="if(value=='    请输入内容')value=''" onblur="if(!value)value='    请输入内容'" name="keyword" > 
+                         </div>
+                         <div class="content-module_3_wei">
+                             <div class="left"><a href="./Home-page_4.html" style="color: white;">保存</a></div>
+                             <div class="right"><a href="./Home-page_4.html">取消</a></div>
+                         </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+                
+
+             
+        </div>
+    </div>
+    <!-- <script src="../json/mzxf_2.json"></script> -->
+    <script src="../js/zych_2.js"></script>
+    <script src="../layui/layui.js"></script>
+</body>
+
+</html>

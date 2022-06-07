@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../七尾医疗/download/font_lk8imr1od1f/iconfont.css">
+    <link rel="stylesheet" href="../css/Hospital_navigation_four.css">
+    <link rel="stylesheet" href="../layui-v2.6.8/layui-v2.6.8/layui/css/layui.css">
+    <link rel="stylesheet" href="../download/font_lk8imr1od1f/iconfont.css">
+    <script src="../layui-v2.6.8/layui-v2.6.8/layui/layui.js"></script>
+
+    <title>七尾</title>
+    <style>
+        #u8909_div {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(242, 242, 242);
+            color: blue;
+            display: flex;
+        }
+
+        #u8909_div>span {
+            margin: 15px;
+        }
+
+        #demo1 {
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        input {
+            width: 260px;
+            height: 40px;
+            border: 1px solid rgb(230, 241, 255);
+            border-radius: 5px;
+        }
+
+        #u8910_div {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        #u8910_div>input {
+            margin-left: 30px;
+        }
+
+        #u8911_div {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        #u8911_div>input {
+            margin-left: 30px;
+        }
+
+        #u8912_div {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        #u8912_div>input {
+            margin-left: 60px;
+        }
+
+        #u8913_div {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        #demo1 {
+            margin-left: 30px;
+        }
+
+        .content-map {
+            margin: 30px 100px;
+        }
+
+        .content-module {
+            height: 1300px;
+        }
+
+        #frame {
+            height: 1500px;
+        }
+
+        .td1 {
+            width: 63px;
+            height: 40px;
+            text-align: center;
+        }
+
+        .td2 {
+            width: 137px;
+            height: 40px;
+            text-align: center;
+        }
+
+        .td3 {
+            width: 302px;
+            height: 40px;
+            text-align: center;
+        }
+
+        .td4 {
+            width: 155px;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .td4>img {
+            width: 20px;
+            height: 20px;
+        }
+
+        tr td,
+        th {
+            border: 1px solid black;
+        }
+
+        #u9100_span {
+            position: relative;
+        }
+
+        #u9100_div {
+            position: absolute;
+            left: 100px;
+            margin-top: -20px;
+        }
+        #jj1{
+          line-height: 100px;
+          margin-left: -60px;
+        }
+        .layui-form{
+            position: absolute;
+            top: 240px;
+            left: 30px;
+        }
+        #gtt1{
+            margin-top:20px ;
+            display: flex;
+        }
+        #gtt1_div{
+            width: 120px;
+            height: 40px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        }
+        #gtt1_div>span>a{
+            color: white;
+        }
+        #gtt2_div>span>a{
+            color: blue;
+        }
+        #gtt2_div{
+            width: 120px;
+            height: 40px;
+            margin-left:40px ;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: cornflowerblue;
+        }
+        #gtt2_div:hover{
+            background-color: rgb(26, 125, 255);
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 整体大盒子 -->
+   <div id="frame">
+    <!-- 顶部导航栏 -->
+    <div id="navigation">
+        <div class="navigation_1">
+            <div class="navigation-div"><img src="../img/HeadPortrait-u4823.svg" alt=""
+                    style="width: 23px;height: 23px;"></div>
+            <span class="navigation-span">Sam</span>
+            <span class="iconfont">&#xe656;</span>
+            <div id="navigation_1-set" >
+                <div class="navigation_1-set"><span><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></span></div>
+                <div class="navigation_1-set"><span><a href="/Register .html">退出</a></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- 左侧导航栏 -->
+    <div id="sidebar">
+        <div class="sidebar-div1">
+            <div class="sidebar-div1-logo">logo</div>
+            <span>七尾医疗服务后台</span>
+        </div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test"
+            style="width: 240px;height: 200px;margin-top: 30px;background-color: rgb(25, 124, 254);">
+            <li class="layui-nav-item"><a href="../Home_page.html" style="margin-left:-3px; "><span class="iconfont" style="margin-left:5px;">&#xe79d;</span>首页</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;" id="order" ><span class="iconfont">&#xe61e;</span>预约管理</a>
+                <dl class="layui-nav-child" id="layuinavchild" >
+                    <dd><a href="/xiangmu/七尾医疗/html/appointment.html">预约挂号</a></dd>
+                    <dd><a href="/xiangmu/七尾医疗/html/Accounting.html">预约核酸检测</a></dd>
+                    <dd><a href="/xiangmu/七尾医疗/html/physical.html">预约体检</a></dd>
+                    <dd><a href="/七尾/Home-page.html">医生排班</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><span class="iconfont">&#xe66e;</span>费用管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page.html">门诊消费记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_2.html">门诊充值记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_3.html">住院消费记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_4.html">住院充值记录</a></dd>
+                    <dd><a href="/七星医疗/七星医疗/七尾医疗/html/Home-page_5.html">退款记录</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><span class="iconfont">&#xe615;</span>医院信息</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="/三期项目/三期项目/The doctor management/doctor.html">医生管理</a></dd>
+                    <dd><a href="/三期项目/三期项目/administrative offices management/department.html">科室管理</a></dd>
+                    <dd><a href="/三期项目/三期项目/A medical plan/physical examination.html">体检套餐</a></dd>
+                    <dd><a href="/html/Hospital_navigation_four.html">健康百科</a></dd>
+                    <dd><a href="/html/Hospital_navigation_five.html">医院导航</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><span class="iconfont">&#xe611;</span>系统设置</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="/systemSetup/AdminManagement管理员/admin.html">管理员管理</a></dd>
+                    <dd><a href="/systemSetup/RoleManagement角色/roleManage.html">角色管理</a></dd>
+                    <dd><a href="/systemSetup/TitleManagement职称/titleManage.html">职称管理</a></dd>
+                    <dd><a href="/systemSetup/AdvertisementMessage消息/advertisement.html">消息公告</a></dd>
+                    <dd><a href="/systemSetup/ChangePassword/changePassword.html">修改密码</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!-- 中间内容 -->
+        <!-- 中间内容 -->
+        <div id="content">
+            <div class="content-wordage">
+                <div class="content-wordage-div"></div>
+                <span class="content-wordage-span">新增院区</span>
+
+            </div>
+            <div class="content-module">
+                <div id="u8909_div"><span>编辑院区信息：</span></div>
+                <div id="u8910_div"><span>院区名称：</span> <input type="text" placeholder="请输入内容"></div>
+                <div id="u8911_div"><span>联系电话：</span><input type="text" placeholder="请输入内容"></div>
+                <div id="u8912_div"><span>公交：</span><input type="text" placeholder="请输入内容"></div>
+                <div id="u8913_div"><span>院区地址：</span><button class="layui-btn" id="demo1">请选择地区
+                        <i class="layui-icon layui-icon-down layui-font-12"></i>
+                    </button></div>
+                <div class="content-map">
+                    <iframe
+                        src="https://map.baidu.com/search/%E5%B1%B1%E5%A4%A7%E4%BA%8C%E9%99%A2/@12534848,4539550,13z?querytype=inf&uid=e63549e6c29128440c0a70db&c=176&da_src=shareurl"
+                        name="my" width="800" height="400" frameborder="1" url="">
+                    </iframe>
+                </div>
+                <span id="u9100_span">院内导航</span>
+                <div id="u9100_div">
+                    <table>
+                        <tr>
+                            <th class="td1">序号</th>
+                            <th class="td2">楼层</th>
+                            <th class="td3">楼层索引</th>
+                            <th class="td4">操作</th>
+                        </tr>
+                        <tr>
+                            <td class="td1">1</td>
+                            <td class="td2">1楼</td>
+                            <td class="td3">总服务台 警务室 收费处  急诊室  综合门诊</td>
+                            <td class="td4"><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7956.svg"
+                                    alt=""><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7999.svg"
+                                    alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">1</td>
+                            <td class="td2">1楼</td>
+                            <td class="td3">总服务台 警务室 收费处  急诊室  综合门诊</td>
+                            <td class="td4"><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7956.svg"
+                                    alt=""><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7999.svg"
+                                    alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">1</td>
+                            <td class="td2">1楼</td>
+                            <td class="td3">总服务台 警务室 收费处  急诊室  综合门诊</td>
+                            <td class="td4"><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7956.svg"
+                                    alt=""><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7999.svg"
+                                    alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">1</td>
+                            <td class="td2">1楼</td>
+                            <td class="td3">总服务台 警务室 收费处  急诊室  综合门诊</td>
+                            <td class="td4"><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7956.svg"
+                                    alt=""><img
+                                    src="https://cdn3.axureshop.com/demo/1634752/images/%E6%96%B0%E5%A2%9E%E9%99%A2%E5%8C%BA/u7999.svg"
+                                    alt=""></td>
+                        </tr>
+                    </table>
+                   
+                    <form class="layui-form" style="display: inline-block;">
+                         <div class="layui-form-item">
+                            <input type="checkbox" name="switch" lay-skin="switch">
+
+                         </div>
+                     </form>
+                     <span id="jj1">院区状态</span>
+
+                    <div id="gtt1">
+                        <div id="gtt1_div"><span><a href="../html/Hospital_navigation_five.html">保存</a></span></div>
+                        <div id="gtt2_div"><span><a href="../html/Hospital_navigation_five.html">取消</a></span></div>
+                
+                </div>
+
+                </div>
+             
+            </div>
+                
+        </div>
+        
+    </div>
+    <script>
+        layui.use('dropdown', function () {
+            var dropdown = layui.dropdown
+            dropdown.render({
+                elem: '#demo1' //可绑定在任意元素中，此处以上述按钮为例
+                , data: [{
+                    title: '北京市'
+                    , id: 108
+                    , child: [{
+                        title: '大兴区'
+                        , id: 2111
+                        , child: [{
+                            title: '朝阳区'
+                            , id: 2111
+                        }, {
+                            title: '大兴区'
+                            , id: 3111
+                        }]
+                    }, {
+                        title: '朝阳区'
+                        , id: 3111
+                    }]
+                }, {
+                    title: '上海市'
+                    , id: 109
+                    , child: [{
+                        title: '嘉定区'
+                        , id: 11111
+                        , child: [{
+                            title: '嘉定区'
+                            , id: 2111
+                        }, {
+                            title: '嘉定区'
+                            , id: 3111
+                        }]
+                    }, {
+                        title: '静安区'
+                        , id: 52
+                        , child: [{
+                            title: '静安区'
+                            , id: 2111
+                        }, {
+                            title: '静安区'
+                            , id: 3111
+                        }]
+                    }]
+                }]
+                , id: 'demo1'
+                //菜单被点击的事件
+
+            });
+        });
+    </script>
+</body>
+
+</html>

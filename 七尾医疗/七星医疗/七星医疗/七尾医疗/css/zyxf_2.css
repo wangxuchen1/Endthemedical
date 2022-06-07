@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 248, 255);
+}
+#frame{
+    height: 1000px;
+}
+
+#navigation {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    top: 0px;
+    position: fixed;
+    z-index: 98;
+}
+
+#sidebar {
+    width: 240px;
+    height: 712px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: rgb(25, 124, 254);
+    z-index: 99;
+
+}
+#content{
+    position: absolute;
+    top: 70px;
+    left: 240px;
+}
+
+/* 详情订单中间部分 */
+.content-module {
+    width: 1230px;
+    /* height: 790px; */
+    background-color:brown;
+    /* position: absolute; */
+    top: 74px;
+    left: 35px;
+    z-index: 97;
+    border-radius: 10px;
+}
+/* 订单部分第一个div */
+.content-module_1{
+    width: 1230px;
+    /* background-color:black; */
+    height: 364px;
+    margin-bottom:27px; 
+    border-radius: 6px;
+}
+.content-module_1_div{
+    width: 1230px;
+    height: 65px;
+    background-color: rgb(242, 242, 242);
+    border-top-left-radius: 6px;
+}
+.content-module_1_div>span{
+    color: #006eff;
+    line-height: 65px;
+    margin-left:27px;
+}
+/* 患者详细信息 */
+/* 患者详细信息第一块 */
+.content-module_1_fu{
+display: flex;
+justify-content: space-between;
+}
+.content-module_1_1{
+    width: 33%;
+    height: 300px;
+    /* background-color: aqua; */
+    border-bottom-left-radius: 6px;
+    
+}
+.content-module_1_1_1{
+    width: 100%;
+    height: 25%;
+    display: flex;
+/* justify-content: space-between; */
+}
+.content-module_ash{
+    color: #aaaaaa;
+    line-height: 75px;
+    text-align: center;
+    margin-left: 30px;
+    display: block;
+    /* width: 205px; */
+}
+.content-module_black{
+    color: #333333;
+    line-height: 75px;
+    text-align: center;
+    margin-left: 60px;
+    display: block;
+    /* font-size: 15px; */
+}
+
+
+/* 患者详细信息第二块 */
+.content-module_1_2{
+    width: 33%;
+    height: 300px;
+}
+/* 患者详细信息第三块 */
+.content-module_1_3{
+    width: 33%;
+    height: 300px;
+    /* background-color: rgb(226, 230, 114); */
+    border-bottom-right-radius: 6px; 
+}
+.content-module_img{
+    width: 70px;
+    height: 70px;
+    background-color:rgb(230, 241, 255);
+    margin-top: 10px;
+    border-radius: 50%;
+    line-height: 75px;
+    text-align: center;
+    margin-left: 60px;
+    display: block;
+}
+.content-module_1_p{
+    color: #aaaaaa;
+    line-height: 75px;
+    margin-left: 30px;
+    display: block;
+    margin-top: -80px;
+    
+}
+
+
+
+
+
+
+/* 住院信息*/
+.content-module_2{
+    width: 1230px;
+    background-color:white;
+    height: 677px;
+    margin-bottom:27px; 
+    border-radius: 6px;
+
+}
+.content-module_2_div{
+    width: 1230px;
+    height: 65px;
+    background-color: rgb(242, 242, 242);
+    border-top-left-radius: 6px;
+}
+.content-module_2_div>span{
+    color: #006eff;
+    line-height: 65px;
+    margin-left:27px;
+}
+/* .content-module_2_1{
+    width: 1230;
+    height: 291px;
+    background-color: aquamarine;
+} */
+.content-module_2_2{
+    margin-left: 30px;
+}
+
+tr{
+    text-align: center;
+}
+tr .d1{
+    width:84px ;
+    height: 40px;
+    background-color: rgb(232, 242, 255);
+    color: #aaaaaa;
+}
+tr .d2{
+    width: 157px;
+    height: 40px;
+    background-color: rgb(232, 242, 255);
+    color: #aaaaaa;
+}
+tr .d3{
+    width: 222px;
+    height: 40px;
+    background-color: rgb(232, 242, 255);
+    color: #aaaaaa;
+}
+tr .d4{
+    width: 159px;
+    height: 40px;
+    background-color: rgb(232, 242, 255);
+    color: #aaaaaa;
+}
+tr .d5{
+    width: 159px;
+    height: 40px;
+    background-color: rgb(232, 242, 255);
+    color: #aaaaaa;
+}
+tr .d6{
+    width: 159px;
+    height: 40px;
+    background-color: rgb(232, 242, 255);
+    color: #aaaaaa;
+}
+tr .d11{
+    width:84px ;
+    height: 40px;
+   
+}
+tr .d22{
+    width: 157px;
+    height: 40px;
+    
+}
+tr .d33{
+    width: 222px;
+    height: 40px;
+    
+}
+tr .d44{
+    width: 159px;
+    height: 40px;
+    
+}
+tr .d55{
+    width: 159px;
+    height: 40px;
+   
+}
+tr .d66{
+    width: 159px;
+    height: 40px;
+    
+}
+
+
+
+
+
+
+/* 订单信息 */
+.content-module_3{
+    width: 1230px;
+    background-color:white;
+    height: 493px;
+    margin-bottom:83px;
+    border-radius: 6px;
+}
+.content-module_3_div{
+    width: 1230px;
+    height: 65px;
+    background-color: rgb(242, 242, 242);
+    border-top-left-radius: 6px;
+}
+.content-module_3_div>span{
+    color: #006eff;
+    line-height: 65px;
+    margin-left:27px;
+}
+
+/* 订单备注 */
+.content-module_3_bz{
+    margin-top: -70px;
+    margin-left: 30px;
+}
+.content-module_3_bz_sp{
+    color: #aaaaaa;
+    line-height: 75px;
+    text-align: center;
+    
+}
+.content-module_3_bz_input{
+    margin-left: 55px;
+    border:1px solid rgb(230, 241, 255);
+    width: 600px;
+    height: 50px;
+    border-radius: 6px;
+    outline: #006eff;
+    color: #aaaaaa;
+    line-height: 75px;
+    /* text-align: center; */
+
+}
+.content-module_3_wei{
+    /* width: 100%; */
+    height: 100px;
+    position: relative;
+}
+.left{
+    position: absolute;
+    width: 140px;
+    height: 45px;
+    background-color: rgb(26, 125, 255);
+    left: 155px;
+    top: 20px;
+    border-radius: 5px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+}
+.right{
+    position: absolute;
+    width: 140px;
+    height: 45px;
+    background-color: rgb(230, 241, 255);
+    left: 320px;
+    top: 20px;
+    border-radius: 5px;
+    line-height: 45px;
+    text-align: center;
+    color: rgb(26, 125, 255);
+}
+
+
+
+
+#content p{
+    font-size: 20px;
+    color: red;
+}
+.content-wordage-div{
+    width: 24px;
+    height: 8px;
+    background-color: #006eff;
+    position: absolute;
+    left: 80px;
+    border-radius: 50px;
+}
+.content-wordage-div1{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(219, 235, 255);
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 1090px;
+    margin-top: -35px;
+    color: #006eff;
+}
+.content-wordage-div1>span{
+    line-height: 40px;
+}
+.content-wordage-div2{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(219, 235, 255);
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 1180px;
+    margin-top: -35px;
+    color: #006eff;
+}
+.content-wordage-div2>span{
+    line-height: 40px;
+}
+.content-wordage-div{
+    margin-left: -50px;
+    margin-top: 10px;
+}
+.content-wordage-span{
+    margin-left: 70px;
+    font-size: 24px;
+}
+.content-wordage{
+    margin-top: 20px;
+}
+
+
+
+
+
+/* 右侧滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+    background-color: rgb(168, 168, 168);
+}
+
+
+
+
+
+
+
+

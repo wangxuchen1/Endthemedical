@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 248, 255);
+}
+#frame{
+    height: 1000px;
+}
+
+#navigation {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    top: 0px;
+    position: fixed;
+    z-index: 98;
+}
+
+#sidebar {
+    width: 240px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: rgb(25, 124, 254);
+    z-index: 99;
+
+}
+#content{
+    position: absolute;
+    top: 70px;
+    left: 240px;
+}
+
+.content-module {
+    width: 1230px;
+    height: 790px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 74px;
+    left: 35px;
+    z-index: 10;
+    border-radius: 10px;
+}
+#content p{
+    font-size: 20px;
+    color: red;
+}
+.content-wordage-div{
+    width: 24px;
+    height: 8px;
+    background-color: #006eff;
+    position: absolute;
+    left: 80px;
+    border-radius: 50px;
+}
+.content-wordage-div1{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(219, 235, 255);
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 1090px;
+    margin-top: -35px;
+    color: #006eff;
+}
+.content-wordage-div1>span{
+    line-height: 40px;
+}
+.content-wordage-div2{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(219, 235, 255);
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 1180px;
+    margin-top: -35px;
+    color: #006eff;
+}
+.content-wordage-div2>span{
+    line-height: 40px;
+}
+.content-wordage-div{
+    margin-left: -50px;
+    margin-top: 10px;
+}
+.content-wordage-span{
+    margin-left: 70px;
+    font-size: 24px;
+}
+.content-wordage{
+    margin-top: 20px;
+}
+
+.btn{width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top:40px;
+    left: 20px;
+}
+/* 第一行 */
+.one{
+    position: absolute;
+    top:40px;
+    left: 50px;
+}
+.btn1{width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top:40px;
+    left: 100px;
+}
+.two{
+    position: absolute;
+    top:40px;
+    left: 130px;
+}
+.btn2{width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top:40px;
+    left: 200px;
+}
+.three{
+    position: absolute;
+    top:40px;
+    left: 230px;
+}
+
+.btn3{width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top:40px;
+    left: 290px;
+}
+.four{
+    position: absolute;
+    top:40px;
+    left: 320px;
+}
+
+/* 请选择日期的下拉框 */
+.layui-inline{
+    position: absolute;
+    top:30px;
+    left: 390px;
+}
+#test1{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+.search{
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    top:35px;
+    left:700px;
+    border-radius: 10px;
+    color: white;
+}
+/* 第二行 */
+.header{
+     width: 1220px;
+    height: auto;
+    text-align: center;
+     margin-left: 10px; 
+    color: #d2d2d2;
+   border-collapse: collapse; 
+     position: absolute;
+     top:100px;
+}
+
+
+
+/* json调数据 */
+#dada{
+  margin-left: 30px;
+   margin-top: 80px;
+}
+
+.ss1{
+    display: inline-block;
+    margin-left: 10px;
+    width: 50px;
+     margin-bottom: 10px; 
+}
+.ss2{
+    display: inline-block;
+     margin-left: 60px;
+     width: 100px;
+ }
+.ss3{
+    display: inline-block;
+    margin-left: 10px;
+    width: 130px;
+}
+.ss4{
+    display: inline-block;
+    margin-left: 30px;
+    width: 100px;
+}
+.ss5{
+    display: inline-block;
+    margin-left: 10px;
+    width: 100px;
+}
+.ss6{
+    display: inline-block;
+    margin-left: 5px;
+    width: 100px;
+}
+.ss7{
+    display: inline-block;
+    margin-left: -20px;
+    width: 100px;
+}
+.ss8{
+    display: inline-block;
+    margin-left: -30px;
+    width: 100px;
+}
+.ss9{
+    display: inline-block;
+    margin-left: -20px;
+    width: 100px;
+}
+.ss0{
+    display: inline-block;
+    margin-left: 30px;
+    width: 100px;
+}
+.ss01{
+    display: inline-block;
+ width: 130px;
+ margin-left: -30px;
+
+
+}
+.ss{
+    display: inline-block;
+    width: 50px;
+    margin-left: -10px;
+}
+.s{
+    width: 1200px;
+    border-bottom: 1px solid  #d2d2d2;;
+    margin-bottom: 10px;
+    
+}
+/* 日历小图标 */
+.ssss{
+ 
+ position: relative;
+ top:-30px;
+left: 1150px;
+}
+
+/* 下划线 */
+.t{
+    height: 30px;
+    border-bottom: 1px solid black;
+   
+}
+
+/* 分页码 */
+
+#bot{
+    width: 700px;
+    height: 50px;
+    margin: -30px 530px;
+    display: flex;
+    flex-flow: row nowrap;
+    line-height: 50px;
+     }
+     .div_1{
+     width: 60px;
+     height: 30px;
+     text-align: center;
+     line-height: 30px;
+     margin-top: 10px;
+     border: 1px solid rgb(168, 168, 168);
+     }
+     .no{
+     border-right: none;
+     }
+     .div_2{
+     width: 35px;
+     height: 30px;
+     text-align: center;
+     line-height: 30px;
+     margin-top: 10px;
+     border: 1px solid rgb(168, 168, 168);
+     border-right: none;
+     }
+     .div_3{
+     width: 80px;
+     height: 30px;
+     margin: 10px 10px;
+     }
+     .span_1>input{
+     width: 30px;
+     height: 25px;
+     text-align: center;
+     margin-left: 3px;
+     margin-right: 3px;
+     }
+     .btn_1{
+     width: 50px;
+     height: 30px;
+     background-color: #fff;
+     color: rgb(25,124,254);
+     border: 1px solid rgb(25, 124, 254);
+    margin: 10px 10px; 
+     opacity: 0.5;
+     }
+    
+    
